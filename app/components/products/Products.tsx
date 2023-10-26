@@ -13,13 +13,16 @@ import { carList } from '@/utils/data';
 export type fetchDataType = typeof fetchData;
 
 const PAGE_SIZE = 9;
-let cars: { result: any[]; };
+// let cars: { result: any[]; };
 
 const fetchData = async (take = PAGE_SIZE, skip: number) => {
 
    
-    const results = cars?.result?.slice(skip, skip + take);
-    const total = cars?.result?.length;
+    // const results = cars?.result?.slice(skip, skip + take);
+    // const total = cars?.result?.length;
+
+    const results = carList.slice(skip, skip + PAGE_SIZE);
+    const total = carList.length;
 
     revalidatePath('/');
 
@@ -36,7 +39,7 @@ const fetchData = async (take = PAGE_SIZE, skip: number) => {
 // eslint-disable-next-line @next/next/no-async-client-component
 const Products = async (props: PageProps) => {
 
-    cars = await getAllCarListings();
+    // cars = await getAllCarListings();
    
     const pageNumber = Number(props?.searchParams?.page || 1);
     const take = PAGE_SIZE;
