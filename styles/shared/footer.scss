@@ -1,0 +1,81 @@
+
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--dark-bkg);
+    color: var(--text-dark-bg);
+
+    .ft-col {
+        width: 25%;
+
+        .list-hdr {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.03rem;
+            color: white;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+
+            a {
+                width: fit-content;
+                display: inline-flex;
+                font-size: 0.85rem;
+                letter-spacing: 0.02rem;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--text-dark-bg);
+        }
+
+        .subscribe {
+
+            input {
+                color: black;
+            }
+
+            button {
+                color: white;
+                letter-spacing: 0.03rem;
+                background-color: var(--primary);
+            }
+        }
+
+        .socials {
+
+            a {
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                color: white;
+            }
+
+            .facebook {
+                background-color: #6788ce;
+            }
+
+            .twitter {
+                background-color: #00ACEE;
+            }
+
+            .google {
+                background-color: #DD4B39;
+            }
+        }
+    }
+}

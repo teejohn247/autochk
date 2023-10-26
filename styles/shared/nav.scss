@@ -1,0 +1,94 @@
+.nav-menu {
+
+    .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color: var(--primary);
+
+        .menu-top {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            a {
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                color: white;
+                gap: 0.5rem;
+
+                span {
+                    font-size: 0.8rem;
+                    letter-spacing: 0.03rem;
+                }
+            }
+        }
+    }
+
+    .nav-mid {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // gap: 3rem;
+
+        input {
+            width: 35rem;
+        }
+
+        button {
+            color: white;
+            letter-spacing: 0.04rem;
+            background-color: var(--primary);
+        }
+
+        .cart, .search-bar {
+            margin-left: auto;
+        }
+
+        .cart {
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.2rem;
+            background-color: var(--primary);
+            
+            a {
+                color: white;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .nav-btm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .categories {
+            width: 40%;
+        }
+
+        .menu {
+            display: flex;
+            gap: 2rem;
+
+            a {
+                font-size: 0.9rem;
+                font-weight: 600;
+                letter-spacing: 0.03rem;
+                color: rgba(#000, 0.7);
+                text-decoration: none;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}

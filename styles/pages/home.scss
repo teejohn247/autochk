@@ -1,0 +1,183 @@
+
+.carousel-caption {
+
+    .caption-cont {
+        width: 60%;
+        margin: 0 auto 1.5rem;
+        padding: 2rem 10%;
+        border-radius: 0.4rem;
+        background-color: rgba(#000000, 0.6);
+
+        .main {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .minor {
+
+        }
+    }
+
+    .banner-btn {
+        font-size: 1rem;
+        letter-spacing: 0.03rem;
+        color: white;
+        background-color: var(--primary);
+        margin-bottom: 3rem;
+    }
+}
+
+.side-bar-cards {
+    width: 30%;
+    border-radius: 0.4rem;
+    padding: 1.5rem 2% 2rem;
+
+    .card-hld {
+
+        &:nth-child(n+2) {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(#000, 0.1);
+        }
+
+        .header {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            a {
+                color: var(--text-color);
+                font-size: 0.9rem;
+                letter-spacing: 0.02rem;
+                text-decoration: none;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.carList {
+    width: 65%;
+    margin-bottom: 3rem;
+
+    .header {
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: 0.03rem;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        justify-content: space-between;
+        gap: 2rem 0;
+
+        .product-wrap {
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.3rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+            cursor: pointer;
+
+            .top {
+                position: relative;
+
+                .condition {
+                    font-size: 0.7rem;
+                    letter-spacing: 0.03rem;
+                    color: white;
+                    position: absolute;
+                    border-radius: 1rem;
+                    text-transform: capitalize;
+                    background: rgba(#007bff, 0.8);
+                    padding: 0.1rem 1rem;
+                    right: 5%;
+                    top: 8%;
+                }
+            }
+
+            .bottom {
+                height: 13rem;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 7%;
+
+                .title {
+                    width: 100%;
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                    letter-spacing: 0.03rem;
+                    text-overflow: ellipsis;
+                }
+
+                .main-info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 0.3rem 1rem;
+                    margin: 0.6rem 0 1rem;
+
+                    .info {
+                        width: fit-content;
+                        font-size: 0.7rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4rem;
+                    }
+                }
+
+                .price-tags {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: auto;
+
+                    .cash {
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+
+                    .installment {
+                        font-size: 0.7rem;
+                        color: var(--primary);
+                    }
+                }
+
+                button {
+                    color: white;
+                    margin-top: 0.5rem;
+                    letter-spacing: 0.03rem;
+                    background-color: var(--secondary);
+                }
+            }
+        }
+    }
+
+}
+
+.pagination {
+    gap: 0.6rem;
+
+    a {
+        color: rgba(#000000, 0.6);
+        text-decoration: none;
+
+        &.active {
+            color: white;
+            background-color: var(--primary);
+        }
+    }
+}

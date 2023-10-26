@@ -1,0 +1,7 @@
+import './defaults/base.scss'
+import './defaults/variables.scss'
+import './pages/home.scss'
+import './pages/carInfo.scss'
+import './shared/nav.scss'
+import './shared/footer.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
