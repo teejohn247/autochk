@@ -18,7 +18,7 @@ const Footer = async () => {
         <div className="list-hdr">Car Brands</div>
         <div className="list">
           {carBrands && carBrands['makeList'].slice(0, 8).map((brand: any) => (
-            <Link href='#'>{brand.name}</Link>
+            <Link href='#' key={brand.name}>{brand.name}</Link>
           ))}
         </div>
       </div>

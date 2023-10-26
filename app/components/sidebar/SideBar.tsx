@@ -44,7 +44,7 @@ const SideBar = () => {
                 <div className="header">Car Brands</div>
                 <div className="list">
                     {carBrands && carBrands.map((brand: any) => (
-                        <Checkbox size='sm' radius='sm'>{brand.name}</Checkbox>
+                        <Checkbox key={brand.name} size='sm' radius='sm'>{brand.name}</Checkbox>
                     ))}
                 </div>
             </div>

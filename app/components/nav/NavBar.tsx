@@ -17,6 +17,7 @@ interface Props {
 }
 
 const navBar = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [carBrands, setCarBrands] = useState([]);
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
